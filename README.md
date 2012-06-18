@@ -1,4 +1,5 @@
-         
+[Titanium Appcelerator Quickie: Kinvey Todo & Client, Part One](http://bit.ly/Mhgbm4)
+===
 
 When in Boston a few weeks ago, I had the opportunity to meet the guys over at Kinvey. I had been hearing about the service and features a for a while. Had not paid much attention since I have been working with Appcelerator Cloud Services, but I figured options and multiple tools for my company and for the community only makes it better for everyone.
 
