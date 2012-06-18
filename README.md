@@ -34,8 +34,8 @@ Step One - Initialize (Download Modified Kinvey.js API)
 
 you will need to include the specific application information when initializing the application of utilizing Kinvey.
 
-
-
+<code>
+<pre>
 //
 // code snippet from User.js in sample application
 //
@@ -52,11 +52,13 @@ if (options.appKey === null || options.appSecret === null) {
     return;
 }
 this.Kinvey.init(options);
-
+</pre>
+</code>
 Step Two - Create Object
 
 
-
+<code>
+<pre>
 //
 // Create my custom object todo object by extending the base Kinvey object
 //
@@ -70,13 +72,15 @@ exports.Todo = Kinvey.Entity.extend({
         }
     }
 });
-
-
+</pre>
+</code>
 
 Step Three - Create Collection
 
 We added some extra code here, the queryType that is provided to the collection allows us to apply a query to the collection when initializing it
 
+<code>
+<pre>
 // Create my custom collection
 exports.TodoCollection = Kinvey.Collection.extend({
     // Set the entity definition for entities in this collection.
@@ -98,11 +102,14 @@ exports.TodoCollection = Kinvey.Collection.extend({
             Kinvey.Collection.prototype.constructor.call(this, 'todo-collection', query);
     },
 });
-
+</pre>
+</code>
 Step Four - Saving a Todo Object
 
 Here we create the todo object as a simple javascript object, and then we call save on the newly created object to persist the information to the backend
 
+<code>
+<pre>
 //
 // this code is executed to save the todo object
 //
@@ -129,3 +136,5 @@ function processEvent(e) {
     })
 
 };
+</pre>
+</code>
